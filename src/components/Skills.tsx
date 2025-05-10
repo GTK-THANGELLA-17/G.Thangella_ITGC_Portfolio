@@ -16,7 +16,6 @@ const Skills = () => {
       skills: [
         "IT General Controls",
         "IT Automated Controls",
-        "IT Business Controls",
         "SOX Compliance",
         "Risk Assessment",
         "Audit Planning"

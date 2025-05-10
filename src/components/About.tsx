@@ -139,7 +139,7 @@ const About = () => {
                 processes and regulations, allowing me to provide valuable insights into an organization's compliance status.
               </p>
               <p className={`${theme === 'dark' ? 'text-white/80' : 'text-foreground/80'} leading-relaxed`}>
-                My expertise includes IT general controls, IT automated controls, IT business controls, and SOX compliance.
+                My expertise includes IT general controls, IT automated controls, and SOX compliance.
                 I am passionate about ensuring organizations maintain proper security measures and compliance with regulatory requirements.
               </p>
             </div>
