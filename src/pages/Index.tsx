@@ -1,4 +1,3 @@
-
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import About from '@/components/About';
@@ -9,6 +8,7 @@ import AuditInfo from '@/components/AuditInfo';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import { ThemeProvider } from '@/contexts/ThemeContext';
+import Chatbot from '@/components/Chatbot/Chatbot';
 
 const Index = () => {
   return (
@@ -23,6 +23,7 @@ const Index = () => {
         <Education />
         <Contact />
         <Footer />
+        <Chatbot />
       </div>
     </ThemeProvider>
   );

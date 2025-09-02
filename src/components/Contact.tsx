@@ -149,7 +149,7 @@ const Contact = () => {
                       aria-label={link.name}
                     >
                       {link.name === 'Naukri' ? (
-                        <svg xmlns="https://www.naukri.com/mnjuser/profile?id=&altresid" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" className="text-primary group-hover:text-white transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" className="text-primary group-hover:text-white transition-colors">
                           <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 16h2v-2h-2v2zm0-4h2V7h-2v7z"/>
                         </svg>
                       ) : (

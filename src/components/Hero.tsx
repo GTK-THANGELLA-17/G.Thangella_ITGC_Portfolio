@@ -12,7 +12,7 @@ const Hero = () => {
   // Typing effect for intro text
   useEffect(() => {
     const introText = "Hello, I'm";
-    const fullName = "Thangella G";
+    const fullName = "Thangella G.";
     const role = "IT Audit & Compliance Specialist";
     let introTimer: NodeJS.Timeout;
     let nameTimer: NodeJS.Timeout;
@@ -106,7 +106,7 @@ const Hero = () => {
               </a>
             </Button>
             <Button variant="outline" className="rounded-full px-8 py-6 border-primary/30 button-shine relative overflow-hidden group" asChild>
-              <a href="Thangella_ITGC_Resume.pdf" download="Thangella_ITGC_Resume.pdf">
+              <a href="/Thangella_ITGC_IT_Audit_Resume.pdf" download="./Thangella_ITGC_IT_Audit_Resume.pdf">
                 <Download className="h-5 w-5 mr-2" />
                 <span className="relative z-10 group-hover:text-primary transition-colors duration-300">Download Resume</span>
                 <span className="absolute bottom-0 left-0 w-full h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
@@ -115,7 +115,7 @@ const Hero = () => {
           </div>
           
           <div className="mt-12 flex justify-center md:justify-start space-x-4">
-            <a href="https://www.linkedin.com/in/thangella-g" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-all duration-300 hover:-translate-y-1 group">
+            <a href="https://www.linkedin.com/in/gthangella" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-all duration-300 hover:-translate-y-1 group">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-primary group-hover:scale-110 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
                 <rect x="2" y="9" width="4" height="12"></rect>

@@ -1,5 +1,5 @@
 
-import { CheckCircle, Shield, Lock, Server } from 'lucide-react';
+import { CheckCircle, Shield, Lock, Server, Database, Users, FileText } from 'lucide-react';
 import { useTheme } from '@/contexts/ThemeContext';
 import { Badge } from './ui/badge';
 import { Card, CardContent } from './ui/card';
@@ -9,44 +9,51 @@ const Skills = () => {
   
   const skillGroups = [
     {
-      title: "IT Audit",
+      title: "IT Audit & Compliance",
       icon: Shield,
       color: "from-blue-500/10 to-blue-600/5",
       textColor: "text-blue-500",
       skills: [
-        "IT General Controls",
-        "IT Automated Controls",
-        "SOX Compliance",
-        "Risk Assessment",
-        "Audit Planning"
+        "IT General Controls (ITGC)",
+        "IT Automated Controls (ITAC)",
+        "SOX 404 Compliance",
+        "Test of Design (ToD)",
+        "Test of Effectiveness (ToE)",
+        "Risk and Control Assessment",
+        "Control Gap Identification",
+        "Audit Documentation"
       ]
     },
     {
-      title: "Access Management",
+      title: "Access & Change Management",
       icon: Lock,
       color: "from-purple-500/10 to-purple-600/5",
       textColor: "text-purple-500",
       skills: [
-        "User Provisioning",
-        "User Deprovisioning",
-        "User Access Reviews",
-        "Password Configurations",
-        "High Privilege Access",
-        "Generic Access"
+        "User Provisioning & Deprovisioning",
+        "Segregation of Duties (SOD)",
+        "User Access Reviews (UAR)",
+        "High Privileged Access (HPA)",
+        "Change Management Controls",
+        "Incident Management & RCA",
+        "Password Policy Audits",
+        "Windows Active Directory"
       ]
     },
     {
-      title: "IT Operations",
-      icon: Server,
+      title: "Frameworks & Tools",
+      icon: Database,
       color: "from-teal-500/10 to-teal-600/5",
       textColor: "text-teal-500",
       skills: [
-        "Change Management",
-        "Incident Management",
-        "Data Backup & Restoration",
-        "Job Monitoring/Scheduling",
-        "Asset Management",
-        "MS Office (Proficient)"
+        "ServiceNow GRC",
+        "JIRA",
+        "SQL (Basic querying)",
+        "COBIT Framework",
+        "ISO 27001 & SOC1/SOC2",
+        "Microsoft Excel Advanced",
+        "PowerPoint & Word",
+        "GRC Concepts"
       ]
     }
   ];
@@ -55,7 +62,7 @@ const Skills = () => {
     { skill: "SOX Compliance", percentage: 95, color: "bg-blue-500" },
     { skill: "IT General Controls", percentage: 90, color: "bg-purple-500" },
     { skill: "Access Management", percentage: 88, color: "bg-teal-500" },
-    { skill: "IT Automated Controls", percentage: 85, color: "bg-amber-500" }
+    { skill: "Risk Assessment", percentage: 85, color: "bg-amber-500" }
   ];
 
   return (
@@ -72,8 +79,8 @@ const Skills = () => {
           <Badge variant="outline" className="px-4 py-1.5 text-sm font-medium mb-4 border-primary/30 text-primary">My Expertise</Badge>
           <h2 className="text-3xl md:text-5xl font-bold gradient-heading">Professional Skills</h2>
           <div className="w-20 h-1 bg-primary mx-auto mt-4 mb-6 rounded-full"></div>
-          <p className={`${theme === 'dark' ? 'text-white/70' : 'text-foreground/70'}`}>
-            My specialized skillset in IT Audit and Compliance
+          <p className={`${theme === 'dark' ? 'text-white/70' : 'text-gray-600'}`}>
+            My specialized skillset in IT Risk and Compliance
           </p>
         </div>
 
@@ -94,7 +101,7 @@ const Skills = () => {
                   <div className={`flex items-center justify-center w-12 h-12 rounded-lg bg-gradient-to-br ${group.color} mr-4 group-hover:-rotate-12 transition-transform duration-300`}>
                     <group.icon className={`h-6 w-6 ${group.textColor}`} />
                   </div>
-                  <h3 className={`text-xl font-bold ${theme === 'dark' ? 'text-white' : 'text-foreground'}`}>{group.title}</h3>
+                  <h3 className={`text-xl font-bold ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>{group.title}</h3>
                 </div>
                 
                 <div className="space-y-3">
@@ -105,7 +112,7 @@ const Skills = () => {
                       style={{ animationDelay: `${(index * 0.2) + (idx * 0.1)}s` }}
                     >
                       <CheckCircle className={`h-5 w-5 ${group.textColor} mr-3 flex-shrink-0`} />
-                      <span className={theme === 'dark' ? 'text-white/80' : 'text-foreground/80'}>
+                      <span className={theme === 'dark' ? 'text-white/80' : 'text-gray-700'}>
                         {skill}
                       </span>
                     </div>
@@ -116,18 +123,18 @@ const Skills = () => {
           ))}
         </div>
 
-        {/* Skill meter section - Improved version */}
+        {/* Skill meter section */}
         <div className="mt-16 max-w-4xl mx-auto">
           <Card className={`overflow-hidden ${theme === 'dark' ? 'bg-zinc-800/90 border-zinc-700' : 'bg-white/90 border-primary/10'} animate-slide-up animation-delay-700`}>
             <CardContent className="p-8">
-              <h3 className={`text-xl font-bold ${theme === 'dark' ? 'text-white' : 'text-foreground'} mb-6 text-center`}>Professional Proficiency Levels</h3>
+              <h3 className={`text-xl font-bold ${theme === 'dark' ? 'text-white' : 'text-gray-900'} mb-6 text-center`}>Professional Proficiency Levels</h3>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {proficiencyLevels.map((skill, index) => (
                   <div key={index} className="group">
                     <div className="flex justify-between mb-2">
-                      <span className={`font-medium ${theme === 'dark' ? 'text-white' : 'text-foreground'}`}>{skill.skill}</span>
-                      <span className={`font-semibold ${theme === 'dark' ? 'text-white/80' : 'text-foreground/80'}`}>{skill.percentage}%</span>
+                      <span className={`font-medium ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>{skill.skill}</span>
+                      <span className={`font-semibold ${theme === 'dark' ? 'text-white/80' : 'text-gray-700'}`}>{skill.percentage}%</span>
                     </div>
                     <div className="h-3 bg-gray-200 dark:bg-zinc-700 rounded-full overflow-hidden relative">
                       <div 
