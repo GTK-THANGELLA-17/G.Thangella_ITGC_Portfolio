@@ -61,7 +61,7 @@ const About = () => {
   <img
     src="/G.Thangella.jpg"
     alt="Thangella Gadidamalla"
-    className="w-full h-full object-cover object-center"
+    className="w-full h-full object-contain object-center"
   />
 </div>
 
